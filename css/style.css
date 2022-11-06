@@ -1,0 +1,102 @@
+/* global */
+svg path{
+    fill: currentColor;
+}
+.vh-75{
+    height: 75vh;
+}
+.nav-svgs{
+    height: 30px;
+}
+.z-index{
+    z-index: 10000;
+}
+.nav-text{
+    font-size: 2rem;
+}
+.top-20{
+    top:20vh
+}
+/* end glibals */
+/* header */
+.header-image{
+    width: 100%;
+    object-position: center;
+    object-fit: cover;
+    height: 70vh;
+}
+.brand-image{
+    width: 100%;
+    object-position: center;
+    object-fit:fill;
+    height: 25vh;
+    position: relative;
+    top: -40px;
+}
+.brand-name{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    font-size: 3rem;
+    font-weight: 700;
+    font-style: italic;
+    text-align: center;
+}
+
+/* end header  */
+/* main  */
+.main-img{
+    width: 80%;
+    object-position: center;
+    object-fit: cover;
+    transform: translateX(-10%);
+    margin-bottom: 60px;
+    box-shadow: 40px 40px 5px #21302f, -40px -40px 5px #8bc9c5 ;
+}
+.color{
+    color: #21302f;
+}
+.h-300{
+    min-height: 300px;
+}
+.leader{
+    width: fit-content;
+    color:#21302f;
+    padding: 20px;
+    background-image: url('../images/R\ \(1\).png');
+    background-position: center;
+    background-size:cover;
+}
+.cart{
+    border: 0;
+    background-color: transparent;
+}
+.nav-img{
+    width: 100%;
+    height: 20vh;
+}
+.nav-content{
+    z-index: 100;
+}
+.leader-svgs{
+    height: 1em;
+}
+.sidebar-link{
+    font-size: 2rem;
+    color: black;
+    font-weight: 600;
+}
+/* end main */
+@media screen and (max-width: 450px) {
+    .header-image {
+        height: 50vh;
+    }
+        .brand-image{
+            height: 35vh;
+        }
+    .nav-img{
+        height: 10vh;
+    }
+    
+}
