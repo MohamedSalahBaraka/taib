@@ -251,212 +251,39 @@
       </div>
     </header>
     <main>
-      <div class="display-1 fw-bold leader mx-auto">قائمة الطعام</div>
-      <div class="row container-fluid mx-auto my-5">
-        <div class="col-lg-4 col-12 d-none d-lg-block">
-          <div class="position-sticky top-20">
-            <div class="display-1 fw-bold leader">الاصناف</div>
-            <ul class="nav flex-column ms-5">
-              <li class="nav-item">
-                <a href="#" class="nav-link sidebar-link"> جميع الطلبات</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link sidebar-link"> المأكولات</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link sidebar-link">العصائر</a>
-              </li>
-            </ul>
+      <div class="display-1 fw-bold leader mx-auto">معلومات التوصيل</div>
+      <div class="table-responsive">
+        <table class="table table-width">
+          <thead>
+            <th>#</th>
+            <th>الاسم</th>
+            <th>الطلبات</th>
+            <th>العنوان</th>
+            <th>رقم الهاتف</th>
+            <th>نسخ رقم الهاتف</th>
+          </thead>
+
+          <tbody>
+            <tr>
+              <th>1</th>
+              <td>فلان ود فلان</td>
+              <td>كيلو سمك</td>
+              <td>شمال الحلنقة مربع عشرة</td>
+              <td>234124</td>
+              <td>
+                <button class="btn btn-primary phone-copy" data-phone="654322">
+                  نسخ رقم الهاتف
+                </button>
+              </td>
+            </tr>
+          </tbody>
+          <div
+            class="notifiy position-fixed bg-light top-50 start-50 translate-middle-x z-index px-5 py-3 rounded-3"
+            id="copy-notifiy"
+          >
+            <div class="h4 text-success mb-4">تم النسخ</div>
           </div>
-        </div>
-        <div class="col-lg-8 col-12" id="product-container">
-          <div class="row my-3">
-            <div class="col-md-6 col-12">
-              <img src="images/first.webp" alt="" class="w-100" />
-            </div>
-            <div class="col-md-6 col-12">
-              <div class="display-2 fw-bold mb-3" id="product-name">الاسم</div>
-              <div class="display-4 fw-bold mb-3">المكونات</div>
-              <div class="h-1 fw-bold mb-3">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Adipisci recusandae debitis vel. Commodi!
-              </div>
-              <div class="d-block my-3">
-                <div class="display-6 d-inline fw-bold">السعر</div>
-                <div class="display-6 d-inline ms-3" id="product-price">
-                  1234
-                </div>
-                <div class="display-6 d-inline">جنيه</div>
-              </div>
-              <input
-                type="number"
-                name=""
-                id="count"
-                min="1"
-                value="1"
-                class="form-control w-25 d-inline"
-              />
-              <button class="btn btn-primary d-inline add-to-cart" data-id="1">
-                اضف الي السلة
-              </button>
-            </div>
-          </div>
-          <div class="row my-3">
-            <div class="col-md-6 col-12">
-              <img src="images/first.webp" alt="" class="w-100" />
-            </div>
-            <div class="col-md-6 col-12">
-              <div class="display-2 fw-bold mb-3" id="product-name">الاسم</div>
-              <div class="display-4 fw-bold mb-3">المكونات</div>
-              <div class="h-1 fw-bold mb-3">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Adipisci recusandae debitis vel. Commodi!
-              </div>
-              <div class="d-block my-3">
-                <div class="display-6 d-inline fw-bold">السعر</div>
-                <div class="display-6 d-inline ms-3" id="product-price">
-                  1234
-                </div>
-                <div class="display-6 d-inline">جنيه</div>
-              </div>
-              <input
-                type="number"
-                name=""
-                id="count"
-                min="1"
-                value="1"
-                class="form-control w-25 d-inline"
-              />
-              <button class="btn btn-primary d-inline add-to-cart" data-id="2">
-                اضف الي السلة
-              </button>
-            </div>
-          </div>
-          <div class="row my-3">
-            <div class="col-md-6 col-12">
-              <img src="images/first.webp" alt="" class="w-100" />
-            </div>
-            <div class="col-md-6 col-12">
-              <div class="display-2 fw-bold mb-3" id="product-name">الاسم</div>
-              <div class="display-4 fw-bold mb-3">المكونات</div>
-              <div class="h-1 fw-bold mb-3">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Adipisci recusandae debitis vel. Commodi!
-              </div>
-              <div class="d-block my-3">
-                <div class="display-6 d-inline fw-bold">السعر</div>
-                <div class="display-6 d-inline ms-3" id="product-price">
-                  1234
-                </div>
-                <div class="display-6 d-inline">جنيه</div>
-              </div>
-              <input
-                type="number"
-                name=""
-                id="count"
-                min="1"
-                value="1"
-                class="form-control w-25 d-inline"
-              />
-              <button class="btn btn-primary d-inline add-to-cart" data-id="3">
-                اضف الي السلة
-              </button>
-            </div>
-          </div>
-          <div class="row my-3">
-            <div class="col-md-6 col-12">
-              <img src="images/first.webp" alt="" class="w-100" />
-            </div>
-            <div class="col-md-6 col-12">
-              <div class="display-2 fw-bold mb-3" id="product-name">الاسم</div>
-              <div class="display-4 fw-bold mb-3">المكونات</div>
-              <div class="h-1 fw-bold mb-3">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Adipisci recusandae debitis vel. Commodi!
-              </div>
-              <div class="d-block my-3">
-                <div class="display-6 d-inline fw-bold">السعر</div>
-                <div class="display-6 d-inline ms-3" id="product-price">
-                  1234
-                </div>
-                <div class="display-6 d-inline">جنيه</div>
-              </div>
-              <input
-                type="number"
-                name=""
-                id="count"
-                min="1"
-                value="1"
-                class="form-control w-25 d-inline"
-              />
-              <button class="btn btn-primary d-inline add-to-cart" data-id="4">
-                اضف الي السلة
-              </button>
-            </div>
-          </div>
-          <div class="row my-3">
-            <div class="col-md-6 col-12">
-              <img src="images/first.webp" alt="" class="w-100" />
-            </div>
-            <div class="col-md-6 col-12">
-              <div class="display-2 fw-bold mb-3" id="product-name">الاسم</div>
-              <div class="display-4 fw-bold mb-3">المكونات</div>
-              <div class="h-1 fw-bold mb-3">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Adipisci recusandae debitis vel. Commodi!
-              </div>
-              <div class="d-block my-3">
-                <div class="display-6 d-inline fw-bold">السعر</div>
-                <div class="display-6 d-inline ms-3" id="product-price">
-                  1234
-                </div>
-                <div class="display-6 d-inline">جنيه</div>
-              </div>
-              <input
-                type="number"
-                name=""
-                id="count"
-                min="1"
-                value="1"
-                class="form-control w-25 d-inline"
-              />
-              <button class="btn btn-primary d-inline add-to-cart" data-id="5">
-                اضف الي السلة
-              </button>
-            </div>
-          </div>
-          <div class="row my-3">
-            <div class="col-md-6 col-12">
-              <img src="images/first.webp" alt="" class="w-100" />
-            </div>
-            <div class="col-md-6 col-12">
-              <div class="display-2 fw-bold mb-3" id="product-name">الاسم</div>
-              <div class="display-4 fw-bold mb-3">المكونات</div>
-              <div class="h-1 fw-bold mb-3">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Adipisci recusandae debitis vel. Commodi!
-              </div>
-              <div class="d-block my-3">
-                <div class="display-6 d-inline fw-bold">السعر</div>
-                <div class="display-6 d-inline ms-3" id="product-price">
-                  1234
-                </div>
-                <div class="display-6 d-inline">جنيه</div>
-              </div>
-              <input
-                type="number"
-                name=""
-                id="count"
-                min="1"
-                value="1"
-                class="form-control w-25 d-inline"
-              />
-              <button class="btn btn-primary d-inline add-to-cart" data-id="6">
-                اضف الي السلة
-              </button>
-            </div>
-          </div>
-        </div>
+        </table>
       </div>
     </main>
     <footer>
@@ -504,8 +331,6 @@
       <bnt class="btn btn-primary notification-btn">حسننا</bnt>
     </div>
     <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/cart.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

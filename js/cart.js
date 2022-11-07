@@ -116,7 +116,7 @@
     // the product is not in LS already before adding it
     lsContent.forEach(function(product) {
       if (product.id === productId) {
-        alert("الطبق قد تم اضافته بالفعل الي السلة");
+        $('#in_cart').show();
         isProductInCart = true;
       }
     });
@@ -136,7 +136,7 @@
       setLSContent(lsContent);
       // update the display of courses in the shopping cart
       displayProducts();
-      alert("تم اضافة الطبق الي السلة");
+       $('#add_cart').show();
     }
   }
 
